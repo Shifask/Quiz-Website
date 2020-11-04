@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="styleq.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+<title>Alpha Quiz System</title>
+<script type="text/javascript">
+
+var attempt = 3;
+function validate(){
+    var username = document.getElementById("user").value;
+    var password = document.getElementById("pwd").value;
+    if ( username == "admin" && password == "admin"){
+        alert ("Login successfully");
+        window.location = "Quiz.html"; // Redirecting to other page.
+        return false;
+}
+else{
+    attempt --;// Decrementing by one.
+    alert("You have left "+attempt+" attempt;");
+// Disabling fields after 3 attempts.
+    if( attempt == 0){
+        document.getElementById("user").disabled = true;
+        document.getElementById("pwd").disabled = true;
+        document.getElementById("submit").disabled = true;
+        return false;
+        }
+    }
+}
+
+</script>
+</head>
+<body>
+<header>
+<img src="quiz.jpg" style="height:120px;width:120px;float:left;margin:30px;">
+<p style="float:left; font-size:30px;margin:20px 430px;;color:black;"><b>Alpha Quiz System</b></p>
+</header>
+<br>
+
+<div class="main">
+<p style="width:100%;height:50px;background:#00ffff;font-size:20px;"><b style="margin:10px 10px;">User Login</b></p>
+<form name="myForm" >
+<div class="textbox">
+ <i class="fa fa-user" aria-hidden="true"></i>
+ <input type="text" placeholder="Username" id="user" />
+ </div>
+ <div class="textbox1">
+ <i class="fa fa-lock" aria-hidden="true"></i>
+ <input type="password" placeholder="password" id="pwd" />
+ </div>
+<input type="button" value="Submit" id="submit" onclick="validate()"/>
+ </form>
+</div>
+</body>
+</html>

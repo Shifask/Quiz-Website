@@ -1,0 +1,71 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+*{
+margin:0;
+padding:0;
+}
+header{
+height:170px;
+}
+.main{
+	height:250px;
+	width:400px;
+	margin-top:100px;
+	margin-left:35%;
+	border:#33ccff solid 1px;
+}
+.textbox{
+	width:70%;
+	overflow:hidden;
+	font-size:20px;
+	padding:8px 0;
+	margin:15px 15%;
+	border:2px solid gray;
+}
+.textbox i{
+	width:26px;
+	float:left;
+	text-align:center;
+}
+.textbox input{
+	border:none;
+	outline:none;
+	background:none;
+	color:black;
+	font-size:18px;
+	width:80%;
+	float:left;
+	margin:0 10px;
+}
+.textbox1{
+	width:70%;
+	overflow:hidden;
+	font-size:20px;
+	padding:8px 0;
+	margin:15px 15%;
+	border:2px solid gray;
+}
+.textbox1 i{
+	width:26px;
+	float:left;
+	text-align:center;
+}
+.textbox1 input{
+	border:none;
+	outline:none;
+	background:none;
+	color:black;
+	font-size:18px;
+	width:80%;
+	float:left;
+	margin:0 10px;
+}
+#submit{
+	background:#1aff1a;
+	width:70%;
+	overflow:hidden;
+	font-size:20px;
+	padding:8px 0;
+	margin:15px 15%;
+	
+}
